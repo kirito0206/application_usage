@@ -56,7 +56,9 @@ class ApplicationUsagePlugin: ActivityAware, FlutterPlugin, MethodCallHandler {
       }
       if (!PermissionTool.get().isGranted(activity!!)) {
         startActivity(activity!!, Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS), null)
-          result.error("414", "权限未开启", null)
+      }
+      if (!PermissionTool.get().isGranted(activity!!)) {
+        result.error("414", "权限未开启", null)
       } else {
         val startTime = call.argument<Long>("startTime")
         val endTime = call.argument<Long>("endTime")

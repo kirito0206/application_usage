@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.parallel.application_usage_example">
+
    <application
         android:label="application_usage_example"
         android:name="${applicationName}"

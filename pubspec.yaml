@@ -1,7 +1,7 @@
 name: application_usage
 description: Get the usage of each application.
 version: 0.0.1
-author: test <kirito.33@qq.com>
+author: kirito <kirito.33@qq.com>
 homepage: https://github.com/kirito0206/application_usage
 
 environment:
